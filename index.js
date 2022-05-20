@@ -39,8 +39,15 @@ for(let i = 0; i < productsCart.length; i++){
     listItem.innerHTML = `${productsCart[i].name} - R$${productsCart[i].price}`
     productsList.appendChild(listItem)
 
+  }
+}
+
+function soma(){
+  for(let i = 0; i < productsCart.length; i++){
     soma += productsCart[i].price
   }
+
+  somaFinal = `Valor: ${soma}`
 }
 
 buttonEnd.innerText = `Finalizar compra`
